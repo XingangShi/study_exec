@@ -27,3 +27,5 @@ linux-native-debug
 linux-native-debug-version
 
 .tags*
+
+*.exe
