@@ -1,0 +1,29 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+*.d
+*.o
+*.mk
+*.bak
+debug
+TableData.hpp
+makefile
+libmux-util.so
+*.suo
+*.user
+
+cross-debug
+linux-native-debug
+linux-native-debug-version
+
+.tags*
