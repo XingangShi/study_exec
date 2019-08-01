@@ -1,0 +1,47 @@
+@echo 
+rem SVN强制写注释的hooks脚本(Windows)
+rem 文件名是: pre-commit.bat,放到repository/hooks目录下
+setlocal
+set SVN_BINDIR="C:\Program Files (x86)\SlikSvn\bin"
+set REPOS=%1
+set TXN=%2
+
+rem 检查是否提交日志
+%SVN_BINDIR%\svnlook log -t "%TXN%" "%REPOS%" | findstr "......" > nul
+if %errorlevel% gtr 0 goto nolog
+
+rem 过滤文件类型
+%SVN_BINDIR%\svnlook changed -t "%TXN%" "%REPOS%" | findstr "obj$"
+if %errorlevel% EQU 0 (goto SuffixError)
+%SVN_BINDIR%\svnlook changed -t "%TXN%" "%REPOS%" | findstr "pdb$"
+if %errorlevel% EQU 0 (goto SuffixError)
+%SVN_BINDIR%\svnlook changed -t "%TXN%" "%REPOS%" | findstr "idb$"
+if %errorlevel% EQU 0 (goto SuffixError)
+%SVN_BINDIR%\svnlook changed -t "%TXN%" "%REPOS%" | findstr "manifest$"
+if %errorlevel% EQU 0 (goto SuffixError)
+%SVN_BINDIR%\svnlook changed -t "%TXN%" "%REPOS%" | findstr "pch$"
+if %errorlevel% EQU 0 (goto SuffixError)
+%SVN_BINDIR%\svnlook changed -t "%TXN%" "%REPOS%" | findstr "res$"
+if %errorlevel% EQU 0 (goto SuffixError)
+%SVN_BINDIR%\svnlook changed -t "%TXN%" "%REPOS%" | findstr "exp$"
+if %errorlevel% EQU 0 (goto SuffixError)
+%SVN_BINDIR%\svnlook changed -t "%TXN%" "%REPOS%" | findstr "ilk$"
+if %errorlevel% EQU 0 (goto SuffixError)
+%SVN_BINDIR%\svnlook changed -t "%TXN%" "%REPOS%" | findstr "dep$"
+if %errorlevel% EQU 0 (goto SuffixError)
+%SVN_BINDIR%\svnlook changed -t "%TXN%" "%REPOS%" | findstr "user$"
+if %errorlevel% EQU 0 (goto SuffixError)
+%SVN_BINDIR%\svnlook changed -t "%TXN%" "%REPOS%" | findstr "suo$"
+if %errorlevel% EQU 0 (goto SuffixError)
+%SVN_BINDIR%\svnlook changed -t "%TXN%" "%REPOS%" | findstr "ncb$"
+if %errorlevel% EQU 0 (goto SuffixError)
+%SVN_BINDIR%\svnlook changed -t "%TXN%" "%REPOS%" | findstr "aps$"
+if %errorlevel% EQU 0 (goto SuffixError)
+
+exit 0
+:SuffixError
+echo 请不要提交受限制的文件类型，如：obj、pdb、exp、ilk等等，谢谢！ 1>&2
+exit 1
+:nolog
+echo 日志(Message)是跟踪文档的重要信息，必须输入，不得输入无意义字符，长度不得小于6个字符。 1>&2
+exit 1

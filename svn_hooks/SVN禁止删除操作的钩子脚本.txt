@@ -1,0 +1,24 @@
+网上都是linux用的，我来个windows用的，刚研究出来，留个记录
+pre-commit.bat
+====================================================
+@echo off
+setlocal
+set Repos=%1
+set TXN=%2
+set SCM=SCMID
+
+svnlook author -t "%TXN%" "%Repos%" | findstr "%SCM%"
+IF %ERRORLEVEL% gtr 0 goto check
+exit 0
+
+:check
+svnlook changed -t "%TXN%" "%Repos%" | findstr "^D"
+if %ERRORLEVEL% == 0 goto err
+pause
+exit 0
+
+:err
+echo Only SCM can delete files or folders. 1>&2
+pause
+exit 1
+===================================================

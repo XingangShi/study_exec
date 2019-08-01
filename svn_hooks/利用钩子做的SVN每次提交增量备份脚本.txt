@@ -1,0 +1,19 @@
+SVN每次提交增量备份脚本，利用钩子做的。
+
+下面是windows下的，linux类似，修改参数命名及路径即可。
+
+保存为post-commit.bat文件，放在版本库的hooks目录中。
+
+@echo off
+set SVN_HOME=d:\subversion
+set SVN_ROOT=%1
+set SVN_TXN=%2
+set DELTA_BACKUP_SVN_ROOT=d:\delta
+set BACKUP_FILE=%DELTA_BACKUP_SVN_ROOT%\%SVN_TXN%.dump
+set LOG_FILE=%DELTA_BACKUP_SVN_ROOT%\backup.log
+
+echo backup revision %SVN_TXN% >> %LOG_FILE%
+@echo 正在备份版本库%SVN_ROOT%......
+%SVN_HOME%\svnadmin dump %SVN_ROOT% --incremental --revision %SVN_TXN% > %BACKUP_FILE%
+@echo 版本库%1成功备份到了%SVN_TXN%
+

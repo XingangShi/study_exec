@@ -1,0 +1,22 @@
+允许用户修改svn日志的钩子脚本 
+
+
+版本库生成后，hooks目录下就存在一些钩子脚本的模板，用户可以作为参考。把pre-revprop-change.tmpl复制为pre-revprop-change.bat，再修改里面的脚本，钩子就设置好了。 
+
+
+ 
+
+只允许用户修改自己的svn日志的钩子脚本：
+
+for /f "usebackq" %%k in (`svnlook author %1 -r%2`) do @set var=%%k
+
+if "%3" == "%var%" goto test
+if "%3" == "li"    goto test
+exit 1
+
+:test
+if "%4" == "svn:log" exit 0
+echo Property '%4' cannot be changed >&2
+exit 1
+
+实现每人可以修改自己的log日志，而管理员li可以任意修改。

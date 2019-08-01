@@ -1,0 +1,26 @@
+使用svn钩子脚本之前，各个开发人员的开发环境中的代码采用svn进行管理，在测试环境中，每天由程序员手动svn up来更新测试环境中的代码，比较繁琐。
+
+今天在svn服务器中使用了钩子脚本，开发人员每次ci操作都会自动调用该脚本实现测试环境中的svn up,因为公司的svn服务器与测试环境为同一台服务器，所以比较好操作
+
+svn项目下面有hooks目录，里面存放的是全部的钩子脚本的模板
+
+post-commit.tmpl 为客户端commit提交后触发
+
+vi post-commit
+
+
+
+#!/bin/sh
+WEB=/home/www/yefmanage
+export LANG=en_US.UTF-8
+svn update $WEB --username test --password test
+
+
+chmod 777 post-commit
+
+测试一下，看脚本是否有权限问题
+
+./post-commit
+
+正常的话，就ok了！以后每次客户端操作，自动运行该脚本
+

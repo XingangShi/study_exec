@@ -1,0 +1,57 @@
+@echo off
+setlocal enableDelayedExpansion
+rem 本脚本实现将SVN服务器A(win环境)上提交的代码，自动上传(通过pscp)到测试环境的服务器B(linux)上，如果SVN在LINUX环境下，根据本代码自行调整。
+
+rem svn服务器上版本库地址
+
+set reposLoc=%1
+
+set REV=%2
+
+rem ---------------------------------------------------------------------- 配置开始
+
+rem svn服务器上putty的路径
+
+set puttyPath="D:\Program Files (x86)\PuTTY"
+
+
+rem 测试环境putty登录的用户名
+
+set username=root
+
+rem 测试环境putty登录的密码
+
+set password=password
+
+rem 测试环境IP
+
+set host=10.1.1.1
+
+
+rem 测试环境代码根地址
+
+set remoteRootPath=/var/www/htdocs/test
+
+rem ---------------------------------------------------------------------- 配置结束
+
+cd /d %puttyPath%
+
+rem 遍历提交了的代码
+
+for /f "tokens=2 delims= " %%i in ('svnlook changed %reposLoc%') do (
+
+    set "var=%%i"
+  
+
+    svnlook cat !reposLoc! !var! > temp.txt
+
+    rem 替掉路径中的trunk
+
+    set newPath=!var:trunk=!
+
+
+    rem 通过pscp提交到测试服务器
+
+    echo y | pscp -l  !username! -pw !password! temp.txt !host!:!remoteRootPath!!newPath!
+
+)

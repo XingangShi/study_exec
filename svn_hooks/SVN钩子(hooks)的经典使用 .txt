@@ -1,0 +1,54 @@
+在实际工作中一定有人遇到过这样的问题： 
+我想在提交代码后立即在web上看到效果，或者是在提交代码的时候能够检查一下我的语法，等等。
+
+其实，这些问题只要用SVN强大hooks就能非常简单的实现，下面的两个例子都是我在实际工作中使用到的。
+
+
+一、提交代码后在web上立即看到效果
+其实原理很简单，就是利用svn的钩子:post-commit，在提交过后想做什么在这个脚本里就写什么。
+假设我们的SVN目录是：/home/svn
+我们需要同步的web目录是：/home/www/web（前提，这个web目录也是从svn里面检出的）
+
+post-commit
+#!/bin/sh
+REPOS="$1"
+REV="$2"/home/svn/repos/hooks/sync-web.sh $@
+
+
+sync-web.sh
+代码: 全选 #!/bin/sh
+REPOS="$1"
+REV="$2"
+cd /home/www/web 2>&1 >> /tmp/svn.log
+sudo /usr/local/bin/svn up 2>&1 >> /tmp/svn.log
+
+二、提交时验证PHP语法
+验证语法当然是在代码提交到仓库之前做的事情，所以要使用SVN的钩子:pre-commit
+
+pre-commit
+代码: 全选 #!/bin/sh
+REPOS="$1"
+TXN="$2"
+
+#svn提交时有个参数 -m 用来记录提交信息,下面这一段是为了验证提交信息长度（规范操作嘛，否则svn里真的是一堆垃圾了）
+LOGMSG=`svnlook log -t "$TXN" "$REPOS"|grep "[a-zA-Z0-9]"|wc -c`
+if [ "$LOGMSG" -lt 9]; then
+echo $LOGMSG 1>&2
+echo -e "\nLog message is too short" 1>&2
+exit 1
+fi
+
+# 用当前目录下的syntax-check脚本验证语法
+source `dirname $0`/syntax-check
+
+# All checks passed, so allow the commit.
+exit 0
+
+
+syntax-check脚本是从网上找的，我就不复制了，直接传文件了。
+
+ syntax-check.zip PHP语法检查脚本 
+
+
+另外，SVN还有其他可以用的钩子：post-lock,post-revprop-change,post-unlock,pre-lock,pre-revprop-change,pre-unlock,start-commit。具体怎么用，看文档吧。
+
