@@ -12,6 +12,8 @@
 
 ##### 5. [UML](/UML)
 
+##### 5. [基于 GIT 和 SVN 持续集成的版本控制流程架构设计演变](/version_flow_of_CI_on_git_and_svn)
+
 ##### 6. [PMP](/PMP)
 
 ##### 7. [Scratch3.0](/Scratch3.0)
