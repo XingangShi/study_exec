@@ -16,13 +16,15 @@
 
 ##### 7. [PMP](/PMP)
 
-##### 8. [Markdown 从入门到精通](/markdown/markdown_from_entry_to_mastery.md)
+##### 8. [使用 hexo 和 Github 搭建属于你自己网站（自建网站）](/use_hexo_with_github_create_yourwebsit/use_hexo_with_github_create_yourwebsit.md)
 
-##### 9. [Scratch3.0](/Scratch3.0)
+##### 9. [Markdown 从入门到精通](/markdown/markdown_from_entry_to_mastery.md)
 
-##### 10. [Git 从新手到专家](/git/git_From_novice_to_master-print.md)
+##### 10. [Scratch3.0](/Scratch3.0)
 
-##### 11. [vscode 学习使用](/vxcode)
+##### 12. [Git 从新手到专家](/git/git_From_novice_to_master-print.md)
+
+##### 13. [vscode 学习使用](/vxcode)
 
 
 
