@@ -4,7 +4,7 @@
 
 ##### 1. [基于 C++ 的设计模式的实现](/design_pattern)
 
-##### 2. [Vim 7.3 版本的学习资料](/vim/vimTips-v7.3.txt)
+##### 2. [Vim 依然值得学习（编辑器比较和选择指南）](/vim/vim_the_powerful_editor_you_need.md)
 
 ##### 3. [shell 脚本的学习](/shell)
 
