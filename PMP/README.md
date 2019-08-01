@@ -1,33 +1,3 @@
----
-title: PMBOK第六版5大过程组、10大知识领域及49个过程一句话简述
-tags:
-  - 项目管理
-  - 新睿智业
-  - PMP备考
-comments: true
-toc: true
-categories:
-  - PMP
-  - PMBOK相关
-abbrlink: ecdbfb91
-keywords:
-  - PMP
-  - 过程组
-  - PMBOK
-  - PMBOK第六版
-  - 五大过程组
-  - 十大知识领域
-  - 四十九个过程
-  - 5大过程组
-  - 10大知识领域
-  - 49个过程
-description: PMBOK（第六版）5大过程组、10大知识领域及49个过程一句话简述，10大知识领域一句话简述，5大过程组及49个过程一句话简述。
-date: 2018-12-07 05:10:03
----
-<script type="text/javascript" src="/js/src/bai.js"></script>
-
----
-
 ### PMBOK（第六版）5大过程组、10大知识领域及49个过程一句话简述
 
 ---
@@ -39,7 +9,6 @@ date: 2018-12-07 05:10:03
 ---
 
 #### 1. 10大知识领域一句话简述
-{% raw %}
 <table>
   <thead>
     <tr>
@@ -60,10 +29,8 @@ date: 2018-12-07 05:10:03
       <tr><td >相关方管理</td><td>两个字概括“神佛”，求神拜佛，不要脸的本事叫“软技能”。</td></tr>
      </tbody>
 </table>
-{% endraw %}
 
 #### 2. 5大过程组及49个过程一句话简述
-{% raw %}
 <table>
   <thead>
     <tr>
@@ -130,4 +97,3 @@ date: 2018-12-07 05:10:03
       <tr>                                                             <td  rowspan="1">整合管理（7/7）</td>      <td  >49.结束项目或阶段</td><td  >移交成果/总结经验/释放团队。</td></tr>
   </tbody>
 </table>
-{% endraw %}
