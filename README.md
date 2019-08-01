@@ -14,7 +14,7 @@
 
 ##### 6. [基于 Git 和 SVN 持续集成的版本控制流程架构设计演变](/version_flow_of_CI_on_git_and_svn)
 
-##### 7. [PMP](/PMP)
+##### 7. [PMP](/PMP/README.md)
 
 ##### 8. [使用 hexo 和 Github 搭建属于你自己网站（自建网站）](/use_hexo_with_github_create_yourwebsit/use_hexo_with_github_create_yourwebsit.md)
 
@@ -24,7 +24,7 @@
 
 ##### 12. [Git 从新手到专家](/git/git_From_novice_to_master-print.md)
 
-##### 13. [vscode 学习使用](/vxcode)
+##### 13. [vscode 学习使用](/vscode)
 
 
 
