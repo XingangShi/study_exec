@@ -18,7 +18,7 @@
 
 ##### 8. [使用 hexo 和 Github 搭建属于你自己网站（自建网站）](/use_hexo_with_github_create_yourwebsit/use_hexo_with_github_create_yourwebsit.md)
 
-##### 9. [Markdown 从入门到精通](/markdown/markdown_from_entry_to_mastery.md)
+##### 9. [Markdown 从入门到精通](/markdown @ 49bc8ad/README.md)
 
 ##### 10. [Scratch 3.0 学习](/Scratch3.0)
 
