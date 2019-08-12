@@ -800,7 +800,39 @@ section 测试
     - [ ] 二月份小专栏微信服务号文章准备
     - [ ] 邀请更多技术牛人到小专栏写作
 
-#### 19. 更多功能（TO Be continue！！！）
+
+#### 19. Note Tag 测试
+>  Hexo 的 Theme-next 主题相关功能  [NexT Theme for Hexo -- Note Tag](https://theme-next.org/docs/tag-plugins/note)
+
+```
+/**
+ * note.js | global hexo script.
+ *
+ * ATTENTION!
+ *  No need to write this tag in 1 line if u don't want see probally bugs.
+ *
+ * Usage:
+ *
+ * {% note [class] %}
+ * Any content (support inline tags too).
+ * {% endnote %}
+ *
+ * [class] : default | primary | success | info | warning | danger.
+ *           May be not defined.
+ */
+```
+
+{% note danger %}
+##### Test note danger
+路漫漫其修远兮，吾将上下而求索。
+{% endnote %}
+
+{% note success %}
+##### Test note success
+路漫漫其修远兮，吾将上下而求索。
+{% endnote %}
+
+#### 20. 更多功能（TO Be continue！！！）
 
 ---
 
@@ -808,4 +840,5 @@ section 测试
 * v.1.0 2017-06-19 初始化；
 * v.1.1 2018-08-05 增加 9 到 10 章节内容；
 * v.2.0 2018-10-19 增加 11 到 18 内容。
+* v.2.1 2019-08-12 增加 19 部分内容。
 
