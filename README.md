@@ -22,7 +22,7 @@
 
 ##### 10. [Scratch 3.0 学习](/Scratch3.0)
 
-##### 12. [Git 从新手到专家](/git/git_From_novice_to_master-print.md)
+##### 12. [Git 从新手到专家](https://github.com/xingangshi/git_gits/blob/master/README.md)
 
 ##### 13. [vscode 学习使用](/vscode)
 
