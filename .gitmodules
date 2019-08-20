@@ -1,6 +1,6 @@
-[submodule "markdown"]
-	path = markdown
-	url = https://github.com/xingangshi/markdown_note.git
-[submodule "git"]
-	path = git
+[submodule "git_gits"]
+	path = git_gits
 	url = https://github.com/xingangshi/git_gits.git
+[submodule "markdown_note"]
+	path = markdown_note
+	url = https://github.com/xingangshi/markdown_note.git
