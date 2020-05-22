@@ -27,13 +27,13 @@
 ##### 13. [vscode 学习使用](/vscode)
 
 ##### 14. [rust 学习笔记](https://github.com/xingangshi/rust_notes/tree/e4dc282078e9d544e22afe4d6525b8aa73deb995)
-###### 14.1 [rust 后端使用，前端使用 vue](https://github.com/xingangshi/rust_notes/tree/master/hello_rocketyy)
+###### 14.1 [rust 后端使用，前端使用 vue](https://github.com/xingangshi/rust_notes/tree/master/hello_rocket)
 > [对应 vue 前端](https://github.com/xingangshi/vue_client)
 
 ##### 15. [vue 学习笔记](/vue)
 ###### 15.1 [vue 简单计算器](https://github.com/xingangshi/vue_calc)
 ###### 15.2 [vue 前端使用，后端用 rust](https://github.com/xingangshi/vue_client)
-> [对应 rust 后端](https://github.com/xingangshi/rust_notes/tree/master/hello_rocketyy)
+> [对应 rust 后端](https://github.com/xingangshi/rust_notes/tree/master/hello_rocket)
 
 
 
