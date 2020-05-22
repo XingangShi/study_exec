@@ -4,3 +4,6 @@
 [submodule "markdown_note"]
 	path = markdown_note
 	url = https://github.com/xingangshi/markdown_note.git
+[submodule "rust_notes"]
+	path = rust_notes
+	url = https://github.com/xingangshi/rust_notes.git

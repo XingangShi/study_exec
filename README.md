@@ -26,6 +26,8 @@
 
 ##### 13. [vscode 学习使用](/vscode)
 
+##### 14. [rust 学习笔记](/rust_notes)
+
 
 
 
