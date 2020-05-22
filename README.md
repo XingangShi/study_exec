@@ -26,7 +26,7 @@
 
 ##### 13. [vscode 学习使用](/vscode)
 
-##### 14. [rust 学习笔记](/rust_notes)
+##### 14. [rust 学习笔记](https://github.com/xingangshi/rust_notes/tree/e4dc282078e9d544e22afe4d6525b8aa73deb995)
 
 
 
