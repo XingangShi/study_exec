@@ -4,3 +4,12 @@
 [submodule "markdown_note"]
 	path = markdown_note
 	url = https://github.com/xingangshi/markdown_note.git
+[submodule "rust_notes"]
+	path = rust_notes
+	url = https://github.com/xingangshi/rust_notes.git
+[submodule "vue/vue_calc"]
+	path = vue/vue_calc
+	url = https://github.com/xingangshi/vue_calc.git
+[submodule "vue/vue_client"]
+	path = vue/vue_client
+	url = https://github.com/xingangshi/vue_client.git
