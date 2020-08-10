@@ -1,47 +1,52 @@
+* DONE vim orgmode short-cuts [100%]
+  - [X] Test
+
 * org-mode 学习
-
 ** 列表
-
-
 常用快捷键：
- - M-RRT 插入同级列表项目
- - M-S-RRT 插入有 checkbox 的同级列表项 
+- M-RRT 插入同级列表项目
+- M-S-RRT 插入有 checkbox 的同级列表项
 
- - [-] 任务-1 [33%]
-   1) [X] 子任务-1
-   2) [ ] 子任务-3
-   3) [ ] 子任务-2
- - [X] 任务-2 [0%]
+** TODO 任务 [1/2]
+  - [-] 任务-1 [66%]
+    1) [X] 子任务-1
+    2) [ ] 子任务-3
+    3) [X] 子任务-2
+  - [X] 任务-2 [100%]
+    1) [X] 任务-2-1
 
 [fn:1]
 
 
 | 姓 | 名 | 性别 | 年龄 | sum |
 |----+----+------+------+-----|
-|  1 |  2 |    3 |    5 |   8 |
-|  2 | 43 |    4 |    5 |   9 |
+|  1 |  2 |    3 |   19 |  22 |
+|  2 | 43 |    4 |   10 |  14 |
+|  3 | 43 |   10 |   10 |  20 |
+|  3 | 43 |   10 |   11 |  21 |
 #+TBLFM: $5=$3+$4
 
 [[https://www/geekpanshi.com][GeekPanshi]]
 
-** TODO [# A] task A
+** VERIFY [# A] task A
 ** TODO [# B] task B
-** TODO top-task [%]
-*** TODO sub-task-1
-** TODO sub-task-2 [0%]
-    - [ ] sub-sub1 [0/3]
-      - [ ] sub-sub-sub-1
-      - [ ] sub-sub-sub-2
-      - [ ] sub-sub-sub-3 <2020-08-08 六>
-*** DONE one-task-has_done
-    - [ ] test pi [2020-08-09 日] 
-    - [ ]  [2020-08-09 日et]
-    - [ ] buy vegetable  <2020-08-11 二>
+** TODO top-task [0%]
+*** sub-task-1
+** TODO sub-task-1 [50%]
+  - [-] sub-sub1 [2/3]
+    - [X] sub-sub-sub-1
+    - [X] sub-sub-sub-2
+    - [ ] sub-sub-sub-3 <2020-08-08 六>
+  - [X] sub-sub-2
+*** DONE one-task-has_done [33%]
+  - [X] test pi [2020-08-09 Sun]
+  - [ ] test [2020-08-09 日]
+  - [ ] buy vegetable <2020-08-11 二>
 
 
-#+BEGIN_SRC cpp
-int i = 1;
+#+BEGIN_SRC c++
+ int i = 1;
+ std::cout << i << std::endl;
 #+END_SRC
 
-[fn:1]参考：https://www.geekpanmshi.com
-
+[fn:1]参考：https://www.geekpanshi.com
