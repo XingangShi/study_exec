@@ -35,7 +35,6 @@
 ###### 15.2 [vue 前端使用，后端用 rust](https://github.com/xingangshi/vue_client)
 > [对应 rust 后端](https://github.com/xingangshi/rust_notes/tree/master/hello_rocket)
 
-
-
+##### 16. [Emacs org mode 学习笔记](https://github.com/xingangshi/org_mode/tree/888f8f414577d45f2a9175aa9db28ab32b54558e)
 
 
