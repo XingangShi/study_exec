@@ -13,3 +13,6 @@
 [submodule "vue/vue_client"]
 	path = vue/vue_client
 	url = https://github.com/xingangshi/vue_client.git
+[submodule "emacs_org_mode"]
+	path = emacs_org_mode
+	url = https://github.com/xingangshi/org_mode.git
