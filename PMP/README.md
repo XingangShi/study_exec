@@ -8,6 +8,10 @@
 
 ---
 
+#### [PMBOK 第六版《项目管理知识体系指南》知识点](https://github.com/panshipmp/pmbok6th)
+
+#### [敏捷软件开发过程札记](https://github.com/panshipmp/scrum)
+
 #### 1. 10大知识领域一句话简述
 <table>
   <thead>
