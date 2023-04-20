@@ -14,7 +14,7 @@
 
 ##### 6. [基于 Git 和 SVN 持续集成的版本控制流程架构设计演变](/version_flow_of_CI_on_git_and_svn)
 
-##### 7. [PMP 之 PMBOK 第六版（含第五版脑图）](/PMP/README.md)
+##### 7. [PMP 之 PMBOK 第六版（含第五版脑图）及敏捷开发](/PMP/README.md)
 
 ##### 8. [使用 hexo 和 Github 搭建属于你自己网站（自建网站）](/use_hexo_with_github_create_yourwebsit/use_hexo_with_github_create_yourwebsit.md)
 
