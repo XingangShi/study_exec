@@ -1,16 +1,15 @@
-### PMBOK（第六版）5大过程组、10大知识领域及49个过程一句话简述
+## PMBOK 第六版（含第五版脑图）及敏捷开发
 
----
+### [PMBOK 第六版《项目管理知识体系指南》知识点](https://github.com/panshipmp/pmbok6th)
+
+### [敏捷软件开发过程札记](https://github.com/panshipmp/scrum)
+
+### PMBOK（第六版）5大过程组、10大知识领域及49个过程一句话简述
 
 > 一说到 PMP 考试、PMP 培训教材，大家都会想到 PMBOK五大过程组和十大知识领域，因为这是 PMP 考试最核心的知识内容。那么，具体的 PMBOK 五大过程组合十大知识领域是什么呢？
 >
 > 下面我们对 PMBOK（第六版）5大过程组、10大知识领域及49个过程进行了一句话简述，包括：10大知识领域一句话简述、5大过程组及49个过程一句话简述。
 
----
-
-#### [PMBOK 第六版《项目管理知识体系指南》知识点](https://github.com/panshipmp/pmbok6th)
-
-#### [敏捷软件开发过程札记](https://github.com/panshipmp/scrum)
 
 #### 1. 10大知识领域一句话简述
 <table>
